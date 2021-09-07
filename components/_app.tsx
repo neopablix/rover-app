@@ -1,13 +1,13 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Layout, Typography, Row, PageHeader, Descriptions, Radio } from 'antd';
 
 import {
   useGetPhotosByRoverQuery,
   useGetRoverDataQuery,
 } from '../store/services/nasa';
-import { Navbar } from '@Components/navbar';
-import { Photo } from '@Components/photo';
-import { Loader } from '@Components/loader';
+import Navbar from '@Components/navbar';
+import Photo from '@Components/photo';
+import Loader from '@Components/loader';
 import { CAMERAS } from './constants';
 import 'antd/dist/antd.css';
 

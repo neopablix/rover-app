@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card } from 'antd';
+import Image from 'next/image';
 
 const { Meta } = Card;
 
@@ -17,7 +18,16 @@ const Photo = ({ alt, src, title, description, loading }: IPhotoProps) => {
       loading={loading}
       hoverable
       style={{ width: 240, margin: 20 }}
-      cover={<img alt={alt} src={src} />}>
+      cover={
+        <Image
+          alt={alt}
+          src={src}
+          width={220}
+          height={220}
+          layout='responsive'
+          loading='lazy'
+        />
+      }>
       <Meta title={title} description={description} />
     </Card>
   );

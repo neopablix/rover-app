@@ -1,5 +1,5 @@
-import { Skeleton, Space } from 'antd';
 import React from 'react';
+import { Skeleton, Space } from 'antd';
 
 export interface ILoaderProps {}
 
