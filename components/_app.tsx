@@ -46,7 +46,9 @@ const App = () => {
           ghost={true}
           title={current.toUpperCase()}
           subTitle={rover?.data?.photo_manifest?.status}>
-          <Descriptions size='default' column={4}>
+          <Descriptions
+            size='default'
+            column={{ xxl: 4, xl: 3, lg: 3, md: 3, sm: 2, xs: 1 }}>
             <Descriptions.Item label='Launch date'>
               {rover?.data?.photo_manifest?.launch_date}
             </Descriptions.Item>
