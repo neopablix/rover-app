@@ -7,7 +7,7 @@ export interface INavbarProps {
   setCurrent: (name: string) => void;
 }
 
-export function Navbar({ current, setCurrent }: INavbarProps) {
+const Navbar = ({ current, setCurrent }: INavbarProps) => {
   const handleClick = (e) => {
     setCurrent(e.key);
   };
@@ -19,6 +19,6 @@ export function Navbar({ current, setCurrent }: INavbarProps) {
       <Menu.Item key='spirit'>Spirit</Menu.Item>
     </Menu>
   );
-}
+};
 
 export default Navbar;

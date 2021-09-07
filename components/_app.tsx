@@ -14,7 +14,7 @@ import 'antd/dist/antd.css';
 const { Header, Content, Footer } = Layout;
 const { Title } = Typography;
 
-function App() {
+const App = () => {
   const [current, setCurrent] = useState('curiosity');
   const [cam, setCam] = useState('FHAZ');
   const [page, setPage] = useState(1);
@@ -105,6 +105,6 @@ function App() {
       <Footer>2021 - Pablo Sanguinetti</Footer>
     </Layout>
   );
-}
+};
 
 export default App;

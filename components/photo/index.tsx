@@ -11,7 +11,7 @@ export interface IPhotoProps {
   loading: boolean;
 }
 
-export function Photo({ alt, src, title, description, loading }: IPhotoProps) {
+const Photo = ({ alt, src, title, description, loading }: IPhotoProps) => {
   return (
     <Card
       loading={loading}
@@ -21,6 +21,6 @@ export function Photo({ alt, src, title, description, loading }: IPhotoProps) {
       <Meta title={title} description={description} />
     </Card>
   );
-}
+};
 
 export default Photo;

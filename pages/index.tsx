@@ -4,7 +4,7 @@ import Head from 'next/head';
 import App from '../components/_app';
 import { store } from '../store';
 
-export default function Home() {
+export const Home = () => {
   return (
     <div>
       <Head>
@@ -18,4 +18,6 @@ export default function Home() {
       </Provider>
     </div>
   );
-}
+};
+
+export default Home;
