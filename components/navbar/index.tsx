@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 import { Menu } from 'antd';
 
@@ -7,7 +7,7 @@ export interface INavbarProps {
   setCurrent: (name: string) => void;
 }
 
-const Navbar = ({ current, setCurrent }: INavbarProps) => {
+const Navbar = memo(({ current, setCurrent }: INavbarProps) => {
   const handleClick = (e) => {
     setCurrent(e.key);
   };
@@ -19,6 +19,6 @@ const Navbar = ({ current, setCurrent }: INavbarProps) => {
       <Menu.Item key='spirit'>Spirit</Menu.Item>
     </Menu>
   );
-};
+});
 
 export default Navbar;
